@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-
+  <header>
+    <h1>My Portfolio</h1>
     <nav>
-        <button onclick="showSection('profile')">Profile</button>
-        <button onclick="showSection('education')">Education</button>
-        <button onclick="showSection('training')">Training/Seminars</button>
-        <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('experience')">Experience</button>
-        <button onclick="showSection('contact')">Contact Us</button>
+      <button onclick="navigate('profile')">Profile</button>
+      <button onclick="navigate('education')">Education</button>
+      <button onclick="navigate('training')">Training/Seminars</button>
+      <button onclick="navigate('projects')">Projects</button>
+      <button onclick="navigate('experience')">Experience</button>
+      <button onclick="navigate('contact')">Contact Us</button>
     </nav>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </header>
 
+  <main>
     <section id="profile" class="active">
-        <h2>Profile</h2>
-        <p>I am a passionate and dedicated web developer with a love for creating innovative and user-friendly websites I enjoy learning new technologies and continuously expanding my skill set to stay current in the ever-evolving tech industry I value teamwork and open communication, believing that collaboration leads to better results.</p>
-        <img src="" alt="">
+      <h2>Profile</h2>
+      <p>
+        I am a passionate and dedicated web developer with a love for creating innovative and user-friendly websites. I enjoy learning new technologies and continuously expanding my skill set to stay current in the ever-evolving tech industry. I value teamwork and open communication, believing that collaboration leads to better results.
+      </p>
+      <img src="" alt="Profile Picture" />
     </section>
 
     <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>2011-2012</strong>  Grade-1 Cabangahan Elementary School</li>
-            <li><strong>2012-2013</strong>  Grade-2 Cabangahan Elementary School</li>
-            <li><strong>2013-2014</strong>  Grade-3 Cabangahan Elementary School</li>
-            <li><strong>2014-2015</strong>  Grade-4 Cabangahan Elementary School</li>
-            <li><strong>2015-2016</strong>  Grade-5 Cabangahan Elementary School</li>
-            <li><strong>2016-2017</strong>  Grade-6 Cabangahan Elementary School</li>
-            <br>
-            <li><strong>2017-2018</strong>  Grade-7 Cabangahan National High-School</li>
-            <li><strong>2018-2019</strong>  Grade-8 Cabangahan National High-School</li>
-            <li><strong>2019-2020</strong>  Grade-9 Cabangahan National High-School</li>
-            <li><strong>2020-2021</strong>  Grade-10 Cabangahan National High-School</li>
-            <br>
-            <li><strong>2021-2022</strong>  Grade-11 Pit-os National High-School TVL-ICT</li>
-            <li><strong>2022-2023</strong>  Grade-12 Pit-os National High-School TVL-ICT</li>
-        </ul>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>2011-2012:</strong> Grade-1 Cabangahan Elementary School</li>
+        <li><strong>2012-2013:</strong> Grade-2 Cabangahan Elementary School</li>
+        <li><strong>2013-2014:</strong> Grade-3 Cabangahan Elementary School</li>
+        <li><strong>2014-2015:</strong> Grade-4 Cabangahan Elementary School</li>
+        <li><strong>2015-2016:</strong> Grade-5 Cabangahan Elementary School</li>
+        <li><strong>2016-2017:</strong> Grade-6 Cabangahan Elementary School</li>
+        <br />
+        <li><strong>2017-2018:</strong> Grade-7 Cabangahan National High-School</li>
+        <li><strong>2018-2019:</strong> Grade-8 Cabangahan National High-School</li>
+        <li><strong>2019-2020:</strong> Grade-9 Cabangahan National High-School</li>
+        <li><strong>2020-2021:</strong> Grade-10 Cabangahan National High-School</li>
+        <br />
+        <li><strong>2021-2022:</strong> Grade-11 Pit-os National High-School TVL-ICT</li>
+        <li><strong>2022-2023:</strong> Grade-12 Pit-os National High-School TVL-ICT</li>
+      </ul>
     </section>
 
     <section id="training">
-        <h2>Training/Semenars</h2>
-        <ul>
-            <li><strong>2023 -</strong> JDVP</li>
-            <li><strong>2023 -</strong> Immersion</li>
-        </ul>
+      <h2>Training/Seminars</h2>
+      <ul>
+        <li><strong>2023:</strong> JDVP</li>
+        <li><strong>2023:</strong> Immersion</li>
+      </ul>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1 - [Add description here]</li>
+        <li>Project 2 - [Add description here]</li>
+        <li>Project 3 - [Add description here]</li>
+      </ul>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>2023 -</strong> University of Cebu Banilad Campus Immersion</li>
-        </ul>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>2023:</strong> University of Cebu Banilad Campus Immersion</li>
+      </ul>
     </section>
 
     <section id="contact">
-  <h2>Contact Us</h2>
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required />
-    <input type="email" id="email" placeholder="Your Email" required />
-    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; <span id="currentYear"></span> My Portfolio</p>
+  </footer>
 
-
-    <script src="assets/index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
